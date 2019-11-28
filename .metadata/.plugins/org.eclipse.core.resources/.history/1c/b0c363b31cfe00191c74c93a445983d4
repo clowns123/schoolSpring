@@ -1,7 +1,0 @@
-package org.zerock.persistence;
-
-
-@R
-public class DataSourceTests {
-
-}

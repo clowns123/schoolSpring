@@ -17,13 +17,28 @@ import lombok.extern.log4j.Log4j;
 public class SampleTests {
 	@Setter(onMethod_ = {@Autowired})
 	private Restaurant restaurant;
+
+	@Setter(onMethod_ = {@Autowired})
+	private Hotel hotel;
+	
 	
 	@Test
 	public void testExist()	{
 		assertNotNull(restaurant);
 		
+		log.info("의존성 주입");
 		log.info(restaurant);
 		log.info("------------------------------");
 		log.info(restaurant.getChef());
+	}
+	
+	@Test
+	public void testHotel() {
+		assertNotNull(restaurant);
+		
+		log.info("의존성 주입");
+		log.info(hotel);
+		log.info("------------------------------");
+		log.info(hotel.getChef());
 	}
 }

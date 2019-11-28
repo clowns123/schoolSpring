@@ -29,6 +29,7 @@ public class JDBCTests {
 					"book_ex");
 			
 			log.info(conn);
+			log.info("연결완료");
 			
 		} catch (Exception e) {
 			// TODO: handle exception
