@@ -23,4 +23,41 @@ public class BoardServiceImpl implements BoardService{
 		// TODO Auto-generated method stub
 		return mapper.getList();
 	}
+
+
+	@Override
+	public boolean modify(BoardVO board) {
+		// TODO Auto-generated method stub
+		log.info("BoardServiceImpl Modify " + board);
+		return mapper.update(board) == 1;
+	}
+
+
+	@Override
+	public boolean remove(Long bno) {
+		// TODO Auto-generated method stub
+		log.info("remove....." + bno);
+		
+		return mapper.delete(bno) == 1;
+	}
+
+
+	@Override
+	public void register(BoardVO board) {
+		// TODO Auto-generated method stub
+		
+		log.info("register...." + board);
+		
+		mapper.insert(board);
+	}
+
+
+	@Override
+	public BoardVO get(Long bno) {
+		// TODO Auto-generated method stub
+		log.info("get..........." + bno);
+		
+		return mapper.read(bno);
+		
+	}
 }
