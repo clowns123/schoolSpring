@@ -26,7 +26,7 @@
                 	<input type='hidden' name='keyword' value='<c:out value="${cri.keyword}"/>'/>
             		<!-- 추가 -->
             		<div class="form-group">
-            			<label>Title</label><input class="form-control" name='bno' 
+            			<label>bno</label><input class="form-control" name='bno' 
             			value='<c:out value="${board.bno}"/>' readonly="readonly">           			
             		</div>     
             		<!-- end 추가 -->   
